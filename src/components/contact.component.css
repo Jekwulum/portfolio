@@ -1,0 +1,123 @@
+/* contact me section */
+
+.contact {
+    margin: auto;
+    padding-top: 1%;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 35px;
+}
+
+.myForm {
+    margin: auto;
+    margin-top: 2%;
+    border: 1px solid rgba(89, 208, 89, 0.337);
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgb(89, 208, 89);
+    transition: 0.4s;
+    width: 400px;
+}
+
+.myForm:hover {
+    box-shadow: 0 8px 16px 0 rgb(89, 208, 89);
+}
+
+.myForm input {
+    border: none;
+    border-bottom: 1px solid rgba(89, 208, 89, 0.576);
+    background-color: black;
+    color: rgb(89, 208, 89);
+    width: 350px;
+    margin: 15px;
+}
+
+.myForm textarea {
+    background-color: black;
+    border: 1px solid rgba(89, 208, 89, 0.576);
+    color: rgb(89, 208, 89);
+    width: 350px;
+    margin: 15px;
+}
+
+.myForm button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: rgba(89, 208, 89, 0.912);
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.myForm button:hover {
+    width: 180px;
+    height: 50px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none
+}
+
+::placeholder {
+    color: rgb(89, 208, 89);
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 2px;
+}
+
+::-ms-input-placeholder {
+    color: rgb(89, 208, 89);
+    opacity: 0.6;
+}
+
+::-ms-input-placeholder {
+    color: rgb(89, 208, 89);
+    opacity: 0.6;
+}
+
+.myLinks ul {
+    display: flex;
+    justify-content: center;
+}
+
+.myLinks li {
+    margin: 30px;
+    list-style-type: none;
+}
+
+@media screen and (max-width:700px) {
+    .contact {
+        margin-top: 5px;
+    }
+    .contact h1 {
+        font-size: 25px;
+    }
+    .myForm {
+        margin-top: 35px;
+        width: 320px;
+    }
+    .myForm input {
+        width: 270px;
+        margin: 15px;
+    }
+    .myForm textarea {
+        width: 270px;
+        margin: 15px;
+    }
+    .myForm button {
+        width: 150px;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+    .myLinks {
+        margin: auto;
+        margin-top: 10px;
+    }
+    .myLinks li {
+        margin: 15px;
+    }
+}
