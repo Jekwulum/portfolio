@@ -8,6 +8,7 @@
 
 .contact h1 {
     font-size: 35px;
+    font-family: 'Monda', sans-serif;
 }
 
 .myForm {
@@ -49,7 +50,7 @@
     font-size: 20px;
     background-color: rgba(89, 208, 89, 0.912);
     margin-bottom: 30px;
-    padding: 10px;
+    padding: auto;
 }
 
 .myForm button:hover {
@@ -65,7 +66,7 @@ textarea:focus {
 ::placeholder {
     color: rgb(89, 208, 89);
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: 'Merienda', cursive;
     padding: 2px;
 }
 

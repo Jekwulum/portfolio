@@ -16,16 +16,16 @@ const Nav = () => {
 
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <NavLink exact to="/" onClick={handleClick} activeClassName="active" className="nav-links">Home</NavLink>
+                            <NavLink exact to="/" onClick={handleClick} activeClassName="active" className="nav-links">HOME</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink exact to="/skills" onClick={handleClick} activeClassName="active" className="nav-links">skills</NavLink>
+                            <NavLink exact to="/skills" onClick={handleClick} activeClassName="active" className="nav-links">SKILLS</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink exact to="/projects" onClick={handleClick} activeClassName="active" className="nav-links">projects</NavLink>
+                            <NavLink exact to="/projects" onClick={handleClick} activeClassName="active" className="nav-links">PROJECTS</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink exact to="/contact-me" onClick={handleClick} activeClassName="active" className="nav-links">contact me</NavLink>
+                            <NavLink exact to="/contact-me" onClick={handleClick} activeClassName="active" className="nav-links">CONTACT ME</NavLink>
                         </li>
                     </ul>
                     <div className="nav-icon" onClick={handleClick}>

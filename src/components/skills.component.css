@@ -6,6 +6,11 @@
     color: black;
 }
 
+.skills h1 {
+    font-family: 'Monda', sans-serif;
+    font-size: 30px;
+}
+
 .skillsDiv {
     padding: 20px;
     display: grid;
@@ -31,9 +36,14 @@
     text-align: justify;
 }
 
+.div2 p {
+    font-family: 'Merienda', cursive;
+}
+
 .skillsText {
     color: rgb(89, 208, 89);
     font-size: 20px;
+    font-family: 'Abhaya Libre', serif;
 }
 
 .skills_img {

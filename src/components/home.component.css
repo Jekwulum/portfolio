@@ -10,6 +10,7 @@
 .name {
     color: rgb(89, 208, 89);
     font-size: 35px;
+    font-family: 'Monda', sans-serif;
 }
 
 .my_pic {
@@ -25,20 +26,23 @@
     text-align: justify;
 }
 
+.prof p {
+    font-family: 'Abhaya Libre', serif;
+}
+
 .abc {
     margin-left: 30px;
 }
 
 .hire button {
     background-color: rgb(89, 208, 89);
-    font-family: sans-serif;
     height: 30px;
     width: 90px;
     border: none;
     border-radius: 8px;
     color: black;
     margin-top: 30px;
-    padding: 5px;
+    padding: auto;
     font-size: 15px;
 }
 
