@@ -7,6 +7,7 @@ import './App.css';
 import Contact from './components/contact.component';
 import Home from './components/home.component';
 import Nav from './components/nav.component';
+import Projects from "./components/projects.component";
 import Skills from './components/skills.component';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/portfolio" element={<Home />} />
             <Route exact path="/contact-me" element={<Contact />} />
+            <Route exact path="/projects" element={<Projects />} />
             <Route exact path="/skills" element={<Skills />} />
           </Routes>
         </div>
