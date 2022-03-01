@@ -28,14 +28,14 @@
 .myForm input {
     border: none;
     border-bottom: 1px solid rgba(89, 208, 89, 0.576);
-    background-color: black;
+    background-color: rgb(26, 19, 56);
     color: rgb(89, 208, 89);
     width: 350px;
     margin: 15px;
 }
 
 .myForm textarea {
-    background-color: black;
+    background-color: rgb(26, 19, 56);
     border: 1px solid rgba(89, 208, 89, 0.576);
     color: rgb(89, 208, 89);
     width: 350px;
@@ -48,14 +48,15 @@
     border: none;
     border-radius: 15px;
     font-size: 20px;
+    color: rgb(26, 19, 56);
     background-color: rgba(89, 208, 89, 0.912);
     margin-bottom: 30px;
     padding: auto;
 }
 
 .myForm button:hover {
-    width: 180px;
-    height: 50px;
+    width: 160px;
+    /* height: 50px; */
 }
 
 input:focus,

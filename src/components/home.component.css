@@ -20,33 +20,51 @@
     margin-top: 50px;
 }
 
+img {
+    border-radius: 120px;
+}
+
 .prof {
     margin: 40px;
     padding-top: 50px;
     text-align: justify;
+    font-size: 20px;
+}
+
+.nwoye {
+    color: white;
+}
+
+.full-stack {
+    color: rgb(89, 208, 89);
 }
 
 .prof p {
     font-family: 'Abhaya Libre', serif;
+    text-align: justify;
 }
 
 .abc {
     margin-left: 30px;
 }
 
-.hire button {
+.resume button {
     background-color: rgb(89, 208, 89);
     height: 30px;
     width: 90px;
     border: none;
     border-radius: 8px;
-    color: black;
+    color: rgb(26, 19, 56);
     margin-top: 30px;
     padding: auto;
     font-size: 15px;
 }
 
-.hire:hover {
+.resume a {
+    color: rgb(26, 19, 56);
+}
+
+.resume:hover {
     cursor: pointer;
 }
 
@@ -63,7 +81,7 @@
         margin: 0;
         text-align: justify;
     }
-    .hire button {
+    .resume button {
         width: 120px;
         font-size: 18px;
     }

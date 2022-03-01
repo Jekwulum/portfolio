@@ -1,15 +1,19 @@
 import React from 'react';
 import './home.component.css';
+import resume from '../utils/charles-nwoye-resume.pdf';
 
 const Home = () => {
     return(
         <div>
             <section class="home" id="home">
                 <div class="prof abc">
-                    <h1 class="name">Nwoye Charles</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati non, explicabo cum expedita blanditiis corrupti iusto quos eum necessitatibus dignissimos.</p>
-                    <span class="hire">
-                        <button><strong>hire me</strong></button>
+                    <h1 class="name">Charles <span className='nwoye'>Nwoye</span></h1>
+                    <p>A <span className='full-stack'>Full-Stack Web Developer</span> passionate about creating 
+                    interactive applications and experiences on the web</p>
+                    <span class="resume">
+                        <button><a href={resume} download>
+                            <strong>Resume</strong>
+                        </a></button>
                     </span>
                 </div>
                 <div>
