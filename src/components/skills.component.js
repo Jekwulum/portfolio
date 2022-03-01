@@ -5,7 +5,7 @@ const Skills = () => {
     return(
         <div>
             <section className="skills" id="skills">
-                <h1>What I do</h1>
+                <h1>Look what I can do</h1>
                 <div className="skillsDiv">
                     <div className="div1">
                         <ul className="skills_img">

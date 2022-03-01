@@ -16,7 +16,7 @@ const Home = () => {
                         </a></button>
                     </span>
                 </div>
-                <div>
+                <div className='img-rotate'>
                     <img class="my_pic abc" src={require("../utils/img/my_photo.jpg")} alt=""/>
                 </div>
             </section>
