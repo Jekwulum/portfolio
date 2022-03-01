@@ -49,11 +49,16 @@ const Skills = () => {
                     </div>
                     <div className="div2">
                         <p style={{color: "white"}}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis quae consectetur illo voluptates voluptatum quia praesentium aliquid similique adipisci. Officiis, blanditiis. Maxime animi itaque sed aperiam, iste delectus totam magni iusto natus
-                            voluptatum aut, doloribus corrupti, aliquid ipsum eum! Itaque quisquam deserunt repellendus culpa nisi asperiores optio veritatis minima dignissimos? Adipisci odio deserunt repudiandae facere quisquam quod earum ipsa magni ut fuga
-                            itaque ducimus rerum dicta ullam veniam iste totam cumque quidem quis neque aut, quia repellendus in. Vitae debitis voluptatem architecto similique, a temporibus eligendi exercitationem dolor veritatis? Exercitationem error repellendus
-                            incidunt nobis eos ducimus repudiandae adipisci dolorem.
-                        </p>
+                            I enjoy writing API's, designing websites and databases, 
+                            solving problems with code and learning new things.
+                        </p><br />
+                        <p style={{color: "white"}}>
+                            I have been a programmer for a while and I know various advanced data structures
+                            and algorithms which includes Singly - and circular-singly - LinkedLists, 
+                            Doubly - and circular-doubly - LinkedLists, Stacks, Queues.
+                        </p><br />
+                        <p style={{color: "white"}}>With my team spirit, I can work effectively in a team as a programmer</p><br />
+                        
                     </div>
                 </div>
             </section>

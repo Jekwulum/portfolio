@@ -27,6 +27,11 @@ img {
 
 .img-rotate {
     -webkit-transform: rotate(354deg);
+    -moz-transform: rotate(354deg);
+    -ms-transform: rotate(354deg);
+    -o-transform: rotate(354deg);
+    -webkit-transform: rotate(354deg);
+    transform: rotate(354deg);
 }
 
 .prof {
