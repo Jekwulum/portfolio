@@ -18,8 +18,84 @@
 </head>
 
 <body class="bg-body-light">
+  <div class="">
+    <!-- header -->
+    <div class="h-1/6 bg-white">
+      <div class="flex justify-between text-center items-center pt-4">
 
+        <div class="flex space-x-4 text-center items-center my-4 ml-6 hover:cursor-pointer">
+          <a href="index.html"><img src="img/prof_photo.jpg" class="w-12 h-12 rounded-full" alt=""></a>
+          <p class="text-3xl font-bold capitalize font-gentium-book-plus text-button-light"><a
+              href="index.html">Charlie</a></p>
+        </div>
 
+        <ul class="hidden md:flex text-center space-x-8 mr-12 font-nunito">
+          <li class="text-gray-400 hover:text-black"><a href="#">About</a></li>
+          <li class="text-gray-400 hover:text-black"><a href="#">Projects</a></li>
+          <li class="text-gray-400 hover:text-black"><a href="#">Resumé</a></li>
+        </ul>
+
+        <button class="mobile-icon md:hidden mr-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8">
+            <path fill-rule="evenodd"
+              d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- mobile nav -->
+      <div class="mobile-menu hidden">
+        <div class="">
+          <ul class="md:hidden flex flex-col text-center items-center space-y-4 mx-auto font-nunito">
+            <li class="text-gray-400 hover:text-black hover:border-r-2 pr-2 hover:border-black"><a href="#">About</a>
+            </li>
+            <li class="text-gray-400 hover:text-black hover:border-r-2 pr-2 hover:border-black"><a href="#">Projects</a>
+            </li>
+            <li class="text-gray-400 hover:text-black hover:border-r-2 pr-2 hover:border-black"><a href="#">Resumé</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- body -->
+    <div class="h-5/6 font-gentium-book-plus">
+      <div class="mx-auto w-5/6 md:w-3/5 text-left">
+        <p class="mt-6 md:pt-10 text-3xl md:text-5xl">Contact.</p>
+
+        <div class="mt-4 md:pt-8 font-poppins text-[14px]">
+          <p class="text-sm">Get in touch or shoot me an email directly on <a href="mailto:charlesnwoye2@gmail.com"
+              class="font-bold">charlesnwoye2@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="mt-4 flex flex-col">
+          <input class="h-12 w-5/6 border-2 outline-none p-2 pl-4 text-button-light bg-body-light" type="text" placeholder="Name">
+          <input class="mt-8 h-12 w-5/6 border-2 outline-none p-2 pl-4 text-button-light bg-body-light" type="email" placeholder="Email">
+          <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"
+          class="h-32 mt-8 w-5/6 border-2 outline-none bg-body-light p-2 pl-4"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="fixed bottom-3 w-full">
+      <ul class="flex text-center mx-auto items-center space-x-12 justify-center">
+        <li>
+          <a href="https://twitter.com/chuk_charles" target="_blank"><i class="zmdi zmdi-twitter zmdi-hc-2x"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/Jekwulum" target="_blank"><i class="zmdi zmdi-github zmdi-hc-2x"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/charles-nwoye-82677a19a" target="_blank"><i
+              class="zmdi zmdi-linkedin zmdi-hc-2x"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </body>
 <script type="text/javascript" src="script.js"></script>
 
