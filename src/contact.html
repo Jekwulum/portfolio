@@ -75,15 +75,15 @@
         </div>
 
         <div class="mt-4 flex flex-col">
-          <input class="h-12 w-5/6 border-2 outline-none p-2 pl-4 text-button-light bg-body-light" type="text"
-            placeholder="Name">
-          <input class="mt-4 h-12 w-5/6 border-2 outline-none p-2 pl-4 text-button-light bg-body-light" type="email"
-            placeholder="Email">
-          <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"
+          <input class="h-12 w-5/6 border-2 outline-none p-2 pl-4  bg-body-light" type="text" placeholder="Name"
+            id="name">
+          <input class="mt-4 h-12 w-5/6 border-2 outline-none p-2 pl-4  bg-body-light" type="email" placeholder="Email"
+            id="email">
+          <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message"
             class="h-32 mt-4 w-5/6 border-2 outline-none bg-body-light p-2 pl-4"></textarea>
         </div>
 
-        <button class="mt-8 mb-6 bg-black text-white w-48 h-12 rounded-lg">Send Message</button>
+        <button class="mt-8 mb-6 bg-black text-white w-48 h-12 rounded-lg" onclick="sendEmail()">Send Message</button>
 
         <p class="my-8 hover:underline"><a href="#">
             Go Back Home
