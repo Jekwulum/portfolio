@@ -541,6 +541,14 @@ video {
   top: 0.25rem;
 }
 
+.-top-3 {
+  top: -0.75rem;
+}
+
+.-top-4 {
+  top: -1rem;
+}
+
 .m-1 {
   margin: 0.25rem;
 }
@@ -834,6 +842,10 @@ video {
   padding-top: 1rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -892,6 +904,10 @@ video {
 
 .leading-loose {
   line-height: 2;
+}
+
+.leading-snug {
+  line-height: 1.375;
 }
 
 .text-button-light {
