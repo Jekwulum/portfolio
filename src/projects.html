@@ -20,23 +20,23 @@
 <body class="bg-body-light">
   <div class="">
     <!-- header -->
-    <div class="h-1/6 bg-white">
-      <div class="flex justify-between text-center items-center pt-4">
+    <div class="bg-white h-1/6">
+      <div class="flex items-center justify-between pt-4 text-center">
 
-        <div class="flex space-x-4 text-center items-center my-4 ml-6 hover:cursor-pointer">
-          <a href="index.html"><img src="img/prof_photo.jpeg" class="w-14 h-14 rounded-full" alt=""></a>
+        <div class="flex items-center my-4 ml-6 space-x-4 text-center hover:cursor-pointer">
+          <a href="index.html"><img src="img/prof_photo.jpeg" class="rounded-full w-14 h-14" alt=""></a>
           <p class="text-3xl font-bold capitalize font-gentium-book-plus text-button-light"><a
               href="index.html">Charlie</a></p>
         </div>
 
-        <ul class="hidden md:flex text-center space-x-8 mr-12 font-nunito">
+        <ul class="hidden mr-12 space-x-8 text-center md:flex font-nunito">
           <li class="text-gray-400 hover:text-black"><a href="about.html">About</a></li>
           <li class="text-gray-400 hover:text-black"><a href="files/Charles_Nwoye_Resume.pdf" target="_blank">Resumé</a>
           </li>
           <li class="text-gray-400 hover:text-black"><a href="contact.html">Contact</a></li>
         </ul>
 
-        <button class="mobile-icon md:hidden mr-3">
+        <button class="mr-3 mobile-icon md:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8">
             <path fill-rule="evenodd"
               d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
@@ -46,16 +46,16 @@
       </div>
 
       <!-- mobile nav -->
-      <div class="mobile-menu hidden">
+      <div class="hidden mobile-menu">
         <div class="">
-          <ul class="md:hidden flex flex-col text-center items-center space-y-4 mx-auto font-nunito">
-            <li class="text-gray-400 hover:text-black hover:border-r-2 pr-2 hover:border-black"><a
+          <ul class="flex flex-col items-center mx-auto space-y-4 text-center md:hidden font-nunito">
+            <li class="pr-2 text-gray-400 hover:text-black hover:border-r-2 hover:border-black"><a
                 href="about.html">About</a>
             </li>
-            <li class="text-gray-400 hover:text-black hover:border-r-2 pr-2 hover:border-black"><a
+            <li class="pr-2 text-gray-400 hover:text-black hover:border-r-2 hover:border-black"><a
                 href="files/Charles_Nwoye_Resume.pdf" target="_blank">Resumé</a>
             </li>
-            <li class="text-gray-400 hover:text-black hover:border-r-2 pr-2 hover:border-black"><a
+            <li class="pr-2 text-gray-400 hover:text-black hover:border-r-2 hover:border-black"><a
                 href="contact.html">Contact</a>
             </li>
           </ul>
@@ -65,18 +65,18 @@
 
     <!-- body -->
     <div class="h-5/6 font-gentium-book-plus">
-      <div class="mx-auto w-5/6 md:w-7/8 text-left">
-        <p class="mt-6 md:mt-10 text-3xl md:text-5xl">Projects.</p>
+      <div class="w-5/6 mx-auto text-left md:w-7/8">
+        <p class="mt-6 text-3xl md:mt-10 md:text-5xl">Projects.</p>
 
         <div class="mx-auto mt-4 md:mt-6 font-poppins text-xs md:text-[13px] leading-loose">
-          <div class="">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-2 w-full">
+          <div class="" id="projects-container">
+            <!-- <div class="flex flex-col items-center justify-center w-full gap-2 md:flex-row">
 
-              <div class="w-full md:w-1/2 h-72 m-1 rounded-lg hover:cursor-pointer hover-div">
-                <img src="img/fleet-dashboard.png" alt="fleet dashboard" class="h-full w-full rounded-lg">
+              <div class="w-full m-1 rounded-lg md:w-1/2 h-72 hover:cursor-pointer hover-div">
+                <img src="img/fleet-dashboard.png" alt="fleet dashboard" class="w-full h-full rounded-lg">
 
                 <div
-                  class="text-div bg-opacity-20 relative bottom-28 p-2 transition transform ease-in-out duration-500">
+                  class="relative p-2 transition duration-500 ease-in-out transform text-div bg-opacity-20 bottom-28">
                   <h1 class="text-xl font-bold">Fleet Management App</h1>
                   <div class="flex gap-2">
                     <button class="bg-button-light w-16 h-7 text-xs rounded-md m-[1px]">React</button>
@@ -85,10 +85,10 @@
                     <button class="bg-button-light w-20 h-7 text-xs rounded-md m-[1px]">TailwindCSS</button>
                   </div>
 
-                  <div class="mt-2 flex gap-2">
+                  <div class="flex gap-2 mt-2">
                     <a href="https://github.com/Jekwulum/Fleet-Management-App" target="_blank">
                       <button
-                        class="bg-black text-white hover:text-black hover:bg-button-light w-32 h-7 text-xs rounded-md flex gap-2 items-center justify-center"><i
+                        class="flex items-center justify-center w-32 gap-2 text-xs text-white bg-black rounded-md hover:text-black hover:bg-button-light h-7"><i
                           class="zmdi zmdi-github"></i>
                         <p>Frontend code</p>
                       </button>
@@ -96,7 +96,7 @@
 
                     <a href="https://github.com/Jekwulum/Fleet-management-API" target="_blank">
                       <button
-                        class="bg-black text-white hover:text-black hover:bg-button-light w-32 h-7 text-xs rounded-md flex gap-2 items-center justify-center"><i
+                        class="flex items-center justify-center w-32 gap-2 text-xs text-white bg-black rounded-md hover:text-black hover:bg-button-light h-7"><i
                           class="zmdi zmdi-github"></i>
                         <p>Backend code</p>
                       </button>
@@ -105,11 +105,11 @@
                 </div>
               </div>
 
-              <div class="w-full md:w-1/2 h-72 m-1 rounded-lg hover:cursor-pointer hover-div">
-                <img src="img/kwiz-app.png" alt="fleet dashboard" class="h-full w-full rounded-lg">
+              <div class="w-full m-1 rounded-lg md:w-1/2 h-72 hover:cursor-pointer hover-div">
+                <img src="img/kwiz-app.png" alt="fleet dashboard" class="w-full h-full rounded-lg">
 
                 <div
-                  class="text-div bg-opacity-20 relative bottom-28 p-2 transition transform ease-in-out duration-500">
+                  class="relative p-2 transition duration-500 ease-in-out transform text-div bg-opacity-20 bottom-28">
                   <h1 class="text-xl font-bold">Quiz App</h1>
                   <div class="flex gap-2">
                     <button class="bg-button-light w-16 h-7 text-xs rounded-md m-[1px]">React</button>
@@ -118,10 +118,10 @@
                     <button class="bg-button-light w-20 h-7 text-xs rounded-md m-[1px]">TailwindCSS</button>
                   </div>
 
-                  <div class="mt-2 flex gap-2">
+                  <div class="flex gap-2 mt-2">
                     <a href="https://github.com/Jekwulum/Kwiz-App" target="_blank">
                       <button
-                        class="bg-black text-white hover:text-black hover:bg-button-light w-32 h-7 text-xs rounded-md flex gap-2 items-center justify-center"><i
+                        class="flex items-center justify-center w-32 gap-2 text-xs text-white bg-black rounded-md hover:text-black hover:bg-button-light h-7"><i
                           class="zmdi zmdi-github"></i>
                         <p>Frontend code</p>
                       </button>
@@ -129,7 +129,7 @@
 
                     <a href="https://github.com/Jekwulum/Kwiz-API" target="_blank">
                       <button
-                        class="bg-black text-white hover:text-black hover:bg-button-light w-32 h-7 text-xs rounded-md flex gap-2 items-center justify-center"><i
+                        class="flex items-center justify-center w-32 gap-2 text-xs text-white bg-black rounded-md hover:text-black hover:bg-button-light h-7"><i
                           class="zmdi zmdi-github"></i>
                         <p>Backend code</p>
                       </button>
@@ -139,13 +139,12 @@
               </div>
             </div>
 
-
-            <div class="flex flex-col md:flex-row items-center justify-center gap-2 w-full mt-2">
-              <div class="w-full bg-white md:w-1/2 h-72 m-1 rounded-lg hover:cursor-pointer hover-div">
-                <img src="img/school.svg" alt="fleet dashboard" class="h-full w-full rounded-lg">
+            <div class="flex flex-col items-center justify-center w-full gap-2 mt-2 md:flex-row">
+              <div class="w-full m-1 bg-white rounded-lg md:w-1/2 h-72 hover:cursor-pointer hover-div">
+                <img src="img/school.svg" alt="fleet dashboard" class="w-full h-full rounded-lg">
 
                 <div
-                  class="text-div bg-opacity-20 relative bottom-28 p-2 transition transform ease-in-out duration-500">
+                  class="relative p-2 transition duration-500 ease-in-out transform text-div bg-opacity-20 bottom-28">
                   <h1 class="text-xl font-bold">School Management App</h1>
                   <div class="flex gap-2">
                     <button class="bg-button-light w-16 h-7 text-xs rounded-md m-[1px]">React</button>
@@ -154,10 +153,10 @@
                     <button class="bg-button-light w-20 h-7 text-xs rounded-md m-[1px]">TailwindCSS</button>
                   </div>
 
-                  <div class="mt-2 flex gap-2">
+                  <div class="flex gap-2 mt-2">
                     <a href="https://github.com/Jekwulum/school-mgt-frontend" target="_blank">
                       <button
-                        class="bg-black text-white hover:text-black hover:bg-button-light w-32 h-7 text-xs rounded-md flex gap-2 items-center justify-center"><i
+                        class="flex items-center justify-center w-32 gap-2 text-xs text-white bg-black rounded-md hover:text-black hover:bg-button-light h-7"><i
                           class="zmdi zmdi-github"></i>
                         <p>Frontend code</p>
                       </button>
@@ -165,7 +164,7 @@
 
                     <a href="https://github.com/Jekwulum/school-mgt-backend" target="_blank">
                       <button
-                        class="bg-black text-white hover:text-black hover:bg-button-light w-32 h-7 text-xs rounded-md flex gap-2 items-center justify-center"><i
+                        class="flex items-center justify-center w-32 gap-2 text-xs text-white bg-black rounded-md hover:text-black hover:bg-button-light h-7"><i
                           class="zmdi zmdi-github"></i>
                         <p>Backend code</p>
                       </button>
@@ -174,17 +173,15 @@
                 </div>
               </div>
 
-              <div class="w-full md:w-1/2 h-72 m-1 rounded-lg hover:cursor-pointer hover-div hidden md:block">
-                <!-- add project here -->
-                <!-- remove hidden from class and md:block -->
+              <div class="hidden w-full m-1 rounded-lg md:w-1/2 h-72 hover:cursor-pointer hover-div md:block">
               </div>
-            </div>
+            </div> -->
 
           </div>
         </div>
 
         <!-- footer -->
-        <div class="bottom-0 mt-4 w-full">
+        <div class="bottom-0 w-full mt-4">
           <ul class="flex space-x-8">
             <li>
               <a href="https://twitter.com/chuk_charles" target="_blank" class="text-xl"><i
@@ -205,5 +202,9 @@
   </div>
 </body>
 <script type="text/javascript" src="script.js"></script>
+<script type="module">
+  import { renderProjects } from './render.project.js';
+  document.getElementById("projects-container").appendChild(renderProjects());
+</script>
 
 </html>

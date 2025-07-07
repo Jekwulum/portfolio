@@ -1,8 +1,19 @@
 {
   "scripts": {
-    "start": "npx tailwindcss -i ./src/input.css -o ./src/style.css --watch"
+    "start": "tailwindcss -i ./src/input.css -o ./src/style.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.2.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jekwulum/portfolio.git"
+  },
+  "author": "Charles Nwoye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jekwulum/portfolio/issues"
+  },
+  "homepage": "https://github.com/Jekwulum/portfolio#readme",
+  "description": ""
 }
