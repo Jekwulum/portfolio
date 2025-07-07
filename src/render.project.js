@@ -1,95 +1,64 @@
 const projects = [
+  
   {
-    name: "Fleet Management App",
-    image: "img/fleet-dashboard.png",
-    description: "A dashboard for managing vehicle fleets with real-time tracking.",
-    tags: ["React", "Node.js", "PostgreSQL", "TailwindCSS"],
-    links: {
-      frontend: "https://github.com/Jekwulum/Fleet-Management-App",
-      backend: "https://github.com/Jekwulum/Fleet-management-API"
-    }
+    name: 'Plumbit',
+    image: 'https://res.cloudinary.com/dtoh4hrgt/image/upload/v1751883000/portfolio/Plumbit_cpzliq.png',
+    description: 'Microservice-based API with reservation, notification and inventory capabilities.',
+    link: 'https://github.com/Jekwulum/Plumbit',
+    stacks: ['Python', 'gRPC', 'PostgreSQL', 'Flask', 'Node.js', 'Typescript', 'Express']
   },
   {
-    name: "Quiz App",
-    image: "img/kwiz-app.png",
-    description: "An interactive quiz application with score tracking.",
-    tags: ["React", "Node.js", "MongoDB", "TailwindCSS"],
-    links: {
-      frontend: "https://github.com/Jekwulum/Kwiz-App",
-      backend: "https://github.com/Jekwulum/Kwiz-API"
-    }
+    name: 'Diskuss',
+    image: 'https://res.cloudinary.com/dtoh4hrgt/image/upload/v1751882521/portfolio/diskuss_s27imh.png',
+    description: 'A real-time chat application using Python, Socket.IO, Flask, and MongoDB.',
+    link: 'https://github.com/Jekwulum/diskuss',
+    stacks: ['Python', 'Socket.IO', 'MongoDB', 'Flask', 'React.js']
   },
   {
-    name: "School Management App",
-    image: "img/school.svg",
-    description: "A system for managing student records and classes.",
-    tags: ["React", "Node.js", "MongoDB", "TailwindCSS"],
-    links: {
-      frontend: "https://github.com/Jekwulum/school-mgt-frontend",
-      backend: "https://github.com/Jekwulum/school-mgt-backend"
-    }
-  }
+    name: 'Shopper',
+    image: 'https://res.cloudinary.com/dtoh4hrgt/image/upload/v1751882675/portfolio/shopper.drawio_ql8uci.png',
+    description: 'An e-commerce microservice-based API leveraging gRPC for efficient service-to-service communication.',
+    link: 'https://yourportfolio.netlify.app',
+    stacks: ['Python', 'gRPC', 'PostgreSQL', 'Flask', 'Node.js', 'Typescript', 'Express']
+  },
+  {
+    name: 'Game Data Notifictaion System',
+    image: 'https://res.cloudinary.com/dtoh4hrgt/image/upload/v1751883291/portfolio/08_terraform_automating_game_day_notification.drawio_588947aa_1_d6vftz.gif',
+    description: 'Automates fetching sports updates from a sports API, processes the data, and sends email notifications to emails using Azure services.',
+    link: 'https://github.com/Jekwulum/08_terraform_automating_game_day_notification',
+    stacks: ['Azure Cloud', 'Python', 'Terraform', 'Azure-Functions', 'Azure-Blob Storage', 'Azure-Eventgrid']
+  },
+  {
+    name: 'Game Highlight Processor',
+    image: 'https://res.cloudinary.com/dtoh4hrgt/image/upload/v1751884802/portfolio/06_terraform__azure_highlight_processor.drawio.drawio_yxrze7.png',
+    description: 'This project uses RapidAPI to obtain NCAA game highlights, stores the json file in an Azure Blob and then parses the json file for a video url and downloads the video to the same Azure Storage Blob. The resources on Azure are provisioned using the IaC (Infrastructure-as-Code) tool "terraform".',
+    link: 'https://github.com/Jekwulum/06_terraform_azure_highlight_processor',
+    stacks: ['Azure Cloud', 'Python', 'Terraform', 'Azure-Blob Storage']
+  },
+  {
+    name: 'NBA Data Lake',
+    image: 'https://res.cloudinary.com/dtoh4hrgt/image/upload/v1751885190/portfolio/DevopsChallenge_day03_n0rxxf.jpg',
+    description: 'This project demonstrates how to build a data pipeline for NBA sports analytics using Azure services. The pipeline fetches NBA player data from an API, stores it in Azure Blob Storage, and creates a queryable table in Azure Synapse Analytics. The data can then be queried and processed using any tool.',
+    link: 'https://github.com/Jekwulum/03_NBADataLake',
+    stacks: ['Azure Cloud', 'Python', 'Terraform', 'Azure-Blob Storage', 'Azure-Synapse Analytics', 'SQL']
+  },
 ];
 
-// renderProjects.js
-function renderProjects() {
-  const projectsContainer = document.createElement("div");
-  projectsContainer.className = "";
+const container = document.getElementById('projectsContainer');
 
-  // Split projects into rows of 2
-  for (let i = 0; i < projects.length; i += 2) {
-    const row = document.createElement("div");
-    row.className = "flex flex-col items-center justify-center w-full gap-2 md:flex-row" +
-      (i > 0 ? " mt-2" : "");
+projects.forEach(project => {
+  const card = document.createElement('div');
+  card.className = 'bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300';
 
-    // Render each project in the row
-    [projects[i], projects[i + 1]].forEach((project, idx) => {
-      if (!project) return; // Skip if odd number of projects
+  card.innerHTML = `
+    <img src="${project.image}" alt="${project.name}" class="rounded-md mb-4 transition-transform duration-300 ease-in-out hover:scale-150 w-full sm:h-[100px] md:h-[180px] lg:h-[150px]" style="">
+    <h3 class="text-xl font-semibold mb-2">${project.name}</h3>
+    <p class="text-sm text-gray-600 mb-3 text-justify">${project.description}</p>
+    <div class="flex flex-wrap gap-2 text-sm mb-4">
+      ${project.stacks.map(stack => `<span class="bg-gray-100 px-2 py-1 rounded hover:bg-blue-200 hover:cursor-pointer transition duration-300 ease-in-out">${stack}</span>`).join('')}
+    </div>
+    <a href="${project.link}" target="_blank" class="text-blue-600 font-medium hover:underline">View on GitHub →</a>
+  `;
 
-      const projectDiv = document.createElement("div");
-      projectDiv.className = "w-full m-1 rounded-lg h-72 md:w-1/2 hover:cursor-pointer hover-div";
-
-      projectDiv.innerHTML = `
-        <img src="${project.image}" alt="${project.name}" class="h-full w-full rounded-lg">
-        <div class="text-div bg-opacity-20 relative bottom-28 p-2 transition transform ease-in-out duration-500">
-          <h1 class="text-xl font-bold">${project.name}</h1>
-          <p class="text-sm my-1">${project.description}</p>
-          <div class="flex gap-2 flex-wrap">
-            ${project.tags.map(tag => `
-              <button class="bg-button-light w-auto px-2 h-7 text-xs rounded-md m-[1px]">
-                ${tag}
-              </button>
-            `).join("")}
-          </div>
-          <div class="mt-2 flex gap-2">
-            ${project.links.frontend ? `
-              <a href="${project.links.frontend}" target="_blank">
-                <button class="bg-black text-white hover:text-black hover:bg-button-light w-32 h-7 text-xs rounded-md flex gap-2 items-center justify-center">
-                  <i class="zmdi zmdi-github"></i>
-                  <p>Frontend code</p>
-                </button>
-              </a>
-            ` : ""}
-            ${project.links.backend ? `
-              <a href="${project.links.backend}" target="_blank">
-                <button class="bg-black text-white hover:text-black hover:bg-button-light w-32 h-7 text-xs rounded-md flex gap-2 items-center justify-center">
-                  <i class="zmdi zmdi-github"></i>
-                  <p>Backend code</p>
-                </button>
-              </a>
-            ` : ""}
-          </div>
-        </div>
-      `;
-
-      row.appendChild(projectDiv);
-    });
-
-    projectsContainer.appendChild(row);
-  }
-
-  return projectsContainer;
-}
-
-// Export for use in other files
-export { renderProjects };
+  container.appendChild(card);
+});
